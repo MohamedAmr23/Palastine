@@ -1,0 +1,103 @@
+body{
+    background-image: url(./imgs/bgpalastine.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.container input{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    padding-right: 100px;
+    border: 3px solid green;
+}
+
+.container button{
+    background-color: blue;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+}
+.show{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.show .valid-pro,
+.show .not-valid-pro{
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 7px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.show .valid-pro{
+    margin-right: 100px;
+    background-color: gray;
+}
+.show .not-valid-pro{
+    background-color: red;
+}
+.products{
+    display: flex;
+    justify-content: center;
+}
+.products .valid{
+    margin-right: 100px;
+    margin-left: 20px;
+}
+.products .valid h2{
+    color: #fff;
+    background-color: green;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+}
+.products .not-valid h2{
+    color: #fff;
+    background-color: red;
+    padding: 10px ;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+}
+/* .dis{
+    display: none;
+} */
+/* .cur{
+    cursor: not-allowed;
+} */
+footer p{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 10px;
+}
+/* media  queries */
+@media(max-width:400px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+  .inp-product{
+    margin-bottom: 20px;
+  }
+  .btn-check{
+    width: fit-content;
+    margin: auto;
+  }
+}
